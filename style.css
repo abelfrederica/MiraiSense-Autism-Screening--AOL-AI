@@ -1,0 +1,83 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6fe4b8 0%, #63baff 50%, #c18aff 100%);
+    color: #1f4ca4;
+    margin: 0;
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #container{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    max-width: 600px;
+    width: 100%;
+    padding: 2rem 2.5rem;
+  }
+  h1, h2, p{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  }
+  .page{
+    display: none;
+  }
+  .page.active{
+    display: block;
+  }
+  #pageInfo p, #pageInfo ul{
+  text-align: left;
+  }
+  .answers{
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 1rem 0;
+  }
+  button.answer-btn{
+    background: rgba(255, 255, 255, 0.25);
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem 1.2rem;
+    color: #1f4ca4;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.15s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  button.answer-btn:hover{
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+  }
+  button.answer-btn.selected{
+    background: #63baff;
+    box-shadow: 0 0 15px #63baff;
+    color: white
+  }
+  .buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  button.nav-btn{
+    padding: 0.8rem 2rem;
+    background:#a66bff;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 0 10px #a66bff;
+    transition: background 0.3s;
+  }
+  button.nav-btn:disabled{
+    background: rgba(160, 120, 255, 0.4);
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+  

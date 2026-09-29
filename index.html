@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Autism Check</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<div id="container">
+  <div id="page1" class="page active" style="text-align: center;"> 
+      <img src="logo.png" alt="Logo" style="width: 300px; height: auto; position: absolute; top: 20px; left: 50%; transform: translateX(-50%);">
+    <h1>Let's Check If You Have Autism!</h1>
+    <div class="buttons" style="justify-content: center; gap: 10px;">
+      <button id="infoBtn" class="nav-btn" type="button">Info</button>
+      <button id="next1" class="nav-btn" type="button">Next</button>
+    </div>
+    <h3 style="position: absolute; bottom: 30px; width: 600px; text-align: center;">
+      "Autism is not a disease. It's a different way of being human."<br>~ John Elder Robison
+    </h3>
+  </div>
+
+  <div id="pageInfo" class="page" style="text-align: left;">
+    <h2>What is Autism?</h2>
+    <p>
+      Autism Spectrum Disorder (ASD) is a developmental disorder that affects communication, behavior, and social interaction. It can vary widely in symptoms and severity from person to person.
+    </p>
+    <h3>Terms You Should Know:</h3>
+    <ul>
+      <li><strong>Jaundice</strong>: A yellowing of the skin and eyes that sometimes occurs in newborns. It is usually harmless and goes away with time or treatment.</li>
+      <li><strong>Screening Test</strong>: A medical or psychological test to detect potential health or developmental issues early.</li>
+    </ul>
+
+    <h3>Why It’s Important to Check for ASD Even in Adulthood</h3>
+    <p>
+      1. <strong>Symptoms Might Be Subtle or Missed in Childhood:</strong> Many adults with ASD were never diagnosed as children because their symptoms were mild or not recognized. Adult diagnosis helps identify these cases.
+    </p>
+    <p>
+      2. <strong>Better Understanding of Yourself:</strong> Getting a diagnosis can help individuals understand their thinking patterns, behaviors, and challenges, improving self-awareness and self-management.
+    </p>
+    <p>
+      3. <strong>Access to Appropriate Support:</strong> Diagnosis opens doors to therapies, resources, and accommodations that can improve quality of life in work, social situations, and mental health.
+    </p>
+    <p>
+      4. <strong>Improved Social Interaction:</strong> Knowing about ASD can help both the individual and those around them communicate and relate more effectively.
+    </p>
+    <p>
+      5. <strong>Reducing Psychological Burden:</strong> Many adults with undiagnosed ASD face anxiety or depression without knowing why. Diagnosis can be the first step to appropriate treatment and relief.
+    </p>
+
+    <div class="buttons">
+      <button id="backToStart" class="nav-btn" type="button">Got it!</button>
+    </div>
+  </div>
+
+
+  <div id="page2" class="page">
+    <h2>I often notice small sounds when others do not.</h2>
+    <div class="answers" id="answers2">
+      <button class="answer-btn" data-value="definitely disagree">Definitely Disagree</button>
+      <button class="answer-btn" data-value="slightly disagree">Slightly Disagree</button>
+      <button class="answer-btn" data-value="slightly agree">Slightly Agree</button>
+      <button class="answer-btn" data-value="definitely agree">Definitely Agree</button>
+    </div>
+    <div class="buttons">
+      <button id="prev2" class="nav-btn" type="button">Prev</button>
+      <button id="next2" class="nav-btn" type="button" disabled>Next</button>
+    </div>
+  </div>
+
+  <div id="page3" class="page">
+    <h2>I usually concentrate more on the whole picture, rather than the small details.</h2>
+    <div class="answers" id="answers3">
+      <button class="answer-btn" data-value="definitely disagree">Definitely Disagree</button>
+      <button class="answer-btn" data-value="slightly disagree">Slightly Disagree</button>
+      <button class="answer-btn" data-value="slightly agree">Slightly Agree</button>
+      <button class="answer-btn" data-value="definitely agree">Definitely Agree</button>
+    </div>
+    <div class="buttons">
+      <button id="prev3" class="nav-btn" type="button">Prev</button>
+      <button id="next3" class="nav-btn" type="button" disabled>Next</button>
+    </div>
+  </div>
+
+  <div id="page4" class="page">
+    <h2>I find it easy to do more than one thing at once.</h2>
+    <div class="answers" id="answers4">
+      <button class="answer-btn" data-value="definitely disagree">Definitely Disagree</button>
+      <button class="answer-btn" data-value="slightly disagree">Slightly Disagree</button>
+      <button class="answer-btn" data-value="slightly agree">Slightly Agree</button>
+      <button class="answer-btn" data-value="definitely agree">Definitely Agree</button>
+    </div>
+    <div class="buttons">
+      <button id="prev4" class="nav-btn" type="button">Prev</button>
+      <button id="next4" class="nav-btn" type="button" disabled>Next</button>
+    </div>
+  </div>
+
+  <div id="page5" class="page">
+    <h2>If there is an interruption, I can switch back to what I was doing very quickly.</h2>
+    <div class="answers" id="answers5">
+      <button class="answer-btn" data-value="definitely disagree">Definitely Disagree</button>
+      <button class="answer-btn" data-value="slightly disagree">Slightly Disagree</button>
+      <button class="answer-btn" data-value="slightly agree">Slightly Agree</button>
+      <button class="answer-btn" data-value="definitely agree">Definitely Agree</button>
+    </div>
+    <div class="buttons">
+      <button id="prev5" class="nav-btn" type="button">Prev</button>
+      <button id="next5" class="nav-btn" type="button" disabled>Next</button>
+    </div>
+  </div>
+
+  <div id="page6" class="page">
+    <h2>I find it easy to ‘read between the lines’ when someone is talking to me.</h2>
+    <div class="answers" id="answers6">
+      <button class="answer-btn" data-value="definitely disagree">Definitely Disagree</button>
+      <button class="answer-btn" data-value="slightly disagree">Slightly Disagree</button>
+      <button class="answer-btn" data-value="slightly agree">Slightly Agree</button>
+      <button class="answer-btn" data-value="definitely agree">Definitely Agree</button>
+    </div>
+    <div class="buttons">
+      <button id="prev6" class="nav-btn" type="button">Prev</button>
+      <button id="next6" class="nav-btn" type="button" disabled>Next</button>
+    </div>
+  </div>
+
+  <div id="page7" class="page">
+    <h2>I know how to tell if someone listening to me is getting bored.</h2>
+    <div class="answers" id="answers7">
+      <button class="answer-btn" data-value="definitely disagree">Definitely Disagree</button>
+      <button class="answer-btn" data-value="slightly disagree">Slightly Disagree</button>
+      <button class="answer-btn" data-value="slightly agree">Slightly Agree</button>
+      <button class="answer-btn" data-value="definitely agree">Definitely Agree</button>
+    </div>
+    <div class="buttons">
+      <button id="prev7" class="nav-btn" type="button">Prev</button>
+      <button id="next7" class="nav-btn" type="button" disabled>Next</button>
+    </div>
+  </div>
+
+  <div id="page8" class="page">
+    <h2>When I’m reading a story I find it difficult to work out the characters’ intentions.</h2>
+    <div class="answers" id="answers8">
+      <button class="answer-btn" data-value="definitely disagree">Definitely Disagree</button>
+      <button class="answer-btn" data-value="slightly disagree">Slightly Disagree</button>
+      <button class="answer-btn" data-value="slightly agree">Slightly Agree</button>
+      <button class="answer-btn" data-value="definitely agree">Definitely Agree</button>
+    </div>
+    <div class="buttons">
+      <button id="prev8" class="nav-btn" type="button">Prev</button>
+      <button id="next8" class="nav-btn" type="button" disabled>Next</button>
+    </div>
+  </div>
+
+  <div id="page9" class="page">
+    <h2>I like to collect information about categories of things (e.g. types of car, bird, train, plant etc).</h2>
+    <div class="answers" id="answers9">
+      <button class="answer-btn" data-value="definitely disagree">Definitely Disagree</button>
+      <button class="answer-btn" data-value="slightly disagree">Slightly Disagree</button>
+      <button class="answer-btn" data-value="slightly agree">Slightly Agree</button>
+      <button class="answer-btn" data-value="definitely agree">Definitely Agree</button>
+    </div>
+    <div class="buttons">
+      <button id="prev9" class="nav-btn" type="button">Prev</button>
+      <button id="next9" class="nav-btn" type="button" disabled>Next</button>
+    </div>
+  </div>
+
+  <div id="page10" class="page">
+    <h2>I find it easy to work out what someone is thinking or feeling just by looking at their face.</h2>
+    <div class="answers" id="answers10">
+      <button class="answer-btn" data-value="definitely disagree">Definitely Disagree</button>
+      <button class="answer-btn" data-value="slightly disagree">Slightly Disagree</button>
+      <button class="answer-btn" data-value="slightly agree">Slightly Agree</button>
+      <button class="answer-btn" data-value="definitely agree">Definitely Agree</button>
+    </div>
+    <div class="buttons">
+      <button id="prev10" class="nav-btn" type="button">Prev</button>
+      <button id="next10" class="nav-btn" type="button" disabled>Next</button>
+    </div>
+  </div>
+
+  <div id="page11" class="page">
+    <h2>I find it difficult to work out people’s intentions.</h2>
+    <div class="answers" id="answers11">
+      <button class="answer-btn" data-value="definitely disagree">Definitely Disagree</button>
+      <button class="answer-btn" data-value="slightly disagree">Slightly Disagree</button>
+      <button class="answer-btn" data-value="slightly agree">Slightly Agree</button>
+      <button class="answer-btn" data-value="definitely agree">Definitely Agree</button>
+    </div>
+    <div class="buttons">
+      <button id="prev11" class="nav-btn" type="button">Prev</button>
+      <button id="next11" class="nav-btn" type="button" disabled>Next</button>
+    </div>
+  </div>
+
+  <div id="page12" class="page">
+    <h2>What Is Your Gender?</h2>
+    <div class="answers" id="answers12">
+      <button class="answer-btn" data-value="Male">Male</button>
+      <button class="answer-btn" data-value="Female">Female</button>
+    </div>
+    <div class="buttons">
+      <button id="prev12" class="nav-btn" type="button">Prev</button>
+      <button id="next12" class="nav-btn" type="button" disabled>Next</button>
+    </div>
+  </div>
+
+  <div id="page13" class="page">
+    <h2>Did You Have Jaundice When You Were Born?</h2>
+    <div class="answers" id="answers13">
+      <button class="answer-btn" data-value="Yes">Yes</button>
+      <button class="answer-btn" data-value="No">No</button>
+    </div>
+    <div class="buttons">
+      <button id="prev13" class="nav-btn" type="button">Prev</button>
+      <button id="next13" class="nav-btn" type="button" disabled>Next</button>
+    </div>
+  </div>
+
+  <div id="page14" class="page">
+    <h2>Have You Ever Undergone A Screening Test Before?</h2>
+    <div class="answers" id="answers14">
+      <button class="answer-btn" data-value="Yes">Yes</button>
+      <button class="answer-btn" data-value="No">No</button>
+    </div>
+    <div class="buttons">
+      <button id="prev14" class="nav-btn" type="button">Prev</button>
+      <button id="next14" class="nav-btn" type="button" disabled>Next</button>
+    </div>
+  </div>
+
+  <div id="result" class="page">
+    <h2>You're....</h2>
+    <div style="text-align:center;">
+      <button id="finish" class="nav-btn" type="button">Finish</button>
+    </div>
+    <p id="resultNote" style="display: none; position: absolute; bottom: 40px; width: 90%; left: 50%; transform: translateX(-50%); text-align: center; font-size: 14px;">
+    </p>
+  </div>
+</div> 
+
+<script src="script.js"></script> 
+
+</body>
+</html>
